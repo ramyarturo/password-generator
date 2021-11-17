@@ -1,0 +1,44 @@
+.container {
+    /*background-color: #3f3f3f;*/
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 50%;
+    min-height: 500px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    overflow: hidden;
+    grid-template-rows: 50px 50% repeat(2, 33.3%);
+    gap: 10px;
+}
+
+.color-switcher {
+    align-self: end;
+}
+
+.card .card-header {
+    justify-content: space-between;
+}
+
+.card .card-header .key-image {
+    animation: key-image-rotate 2s ease-in-out infinite alternate-reverse both;
+}
+
+.card .card-footer {
+    justify-content: center;
+}
+
+@keyframes key-image-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+
+
+}
